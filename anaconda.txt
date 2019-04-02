@@ -1,0 +1,14 @@
+set http_proxy=http://tlchong: password @172.16.252.31:3128
+set https_proxy=https://tlchong: password @172.16.252.31:3128
+
+
+conda create --name env1 python=3.6
+
+activate env1
+conda install numpy scipy matplotlib pandas
+deactivate
+
+
+
+
+
