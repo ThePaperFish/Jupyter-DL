@@ -22,4 +22,4 @@ for x in list:
 		lvl = 'L'			
 	print("{}. {} - {} - {}".format(count, lvl, len(content), x))
 	
-input("\npress enter to continue...")
+#input("\npress enter to continue...")

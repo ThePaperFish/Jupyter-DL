@@ -1,6 +1,6 @@
 import os
 path = 'C:\\Users\\tlchong\\Downloads\\'
-destination_path = r'C:\Users\tlchong\Desktop\all\result_singers'
+destination_path = r'C:\vs2015shareddata\dataset\MY Profiles\temp'
 
 exts = ['.jpg','.png','.gif','jpeg']
 list = os.listdir(path)

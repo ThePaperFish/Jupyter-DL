@@ -10,15 +10,20 @@ args = vars(ap.parse_args())
 path = args["path"]
 list = os.listdir(path)
 list = [os.path.sep.join([path,x]) for x in list]
-list = [x for x in list if os.path.isdir(x)]
+list = [x for x in list]
 
 for x in list:		
 	
-	for y in os.listdir(x):
+	if os.path.isdir(x):
+		for y in os.listdir(x):
+				
+			old_ = os.path.sep.join([x ,y])
+			new_ = os.path.sep.join([path,y])
 			
-		old_ = os.path.sep.join([x ,y])
-		new_ = os.path.sep.join([path,y])
+			os.rename(old_ ,new_ )
+				
+		os.rmdir(x)
 		
-		os.rename(old_ ,new_ )
+	else : 
+		os.remove(x)
 	
-	os.rmdir(x)

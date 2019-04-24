@@ -1,0 +1,20 @@
+FOLDER
+------
+name_index1_gender_cam_class_index2
+
+index1 : photo index
+gender : 0 - male
+         1 - female
+spec   : 0 - no spec
+         1 - with spec
+cam    : 0 - nb308 webcam
+         1 - logitech hd 720p usb webcam
+         2 - huawei p9 plus front camera
+	 3 - huawei p9 plus rear camera
+	 4 - xiaomi m3 front camera
+	 5 - xioami m3 rear camera
+class  : 0 - genuine
+         1 - print
+         2 - huawei p9 plus replay
+         3 - xiaomi mi3 replay
+index2 : capture index

@@ -8,7 +8,6 @@ activate env1
 conda install numpy scipy matplotlib pandas
 deactivate
 
-
-
+jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8080 --NotebookApp.port_retries=0
 
 
