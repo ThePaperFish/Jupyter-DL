@@ -10,8 +10,8 @@ ap.add_argument("-p", "--path", required=True,
 	help="path")
 ap.add_argument("-l", "--layer", type=int, default=1,
 	help="amount of layer")
-ap.add_argument("-w", "--wait", type=int, default=0,
-	help="wait for input")
+ap.add_argument("-w", "--wait", type=int, default=1,
+	help="1 to confirm operation, 0 for no confirm")
 args = vars(ap.parse_args())
 
 list = sub_direct.loop_dir(args["path"], args['layer'])

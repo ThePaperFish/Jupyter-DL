@@ -1,5 +1,0 @@
-..\\code
-..\\docs-master
-..\\list
-..\\result
-..\\temp2

@@ -16,9 +16,9 @@ for x in list:
 	content = os.listdir(os.path.sep.join([dir_path, x]))
 	
 	lvl = 'S'
-	if (len(content) > 200):
+	if (len(content) > 100):
 		lvl = 'M'
-	if (len(content) > 500):
+	if (len(content) > 200):
 		lvl = 'L'			
 	print("{}. {} - {} - {}".format(count, lvl, len(content), x))
 	
